@@ -1,0 +1,31 @@
+#grupoh1 {
+    font-family: sans-serif;
+}
+
+#paragrafo {
+  font-weight: 600;
+  font-size: 3em;
+}
+
+body {
+  font-size: 16px;
+}
+
+#lista {
+  text-decoration: underline;
+  line-height: 40px;
+  font-size: 2em;
+  color: black;
+}
+
+#amarelo {
+  background-color: yellow;
+}
+
+#vermelho {
+  background-color: red;
+}
+
+#marrom {
+  background-color: brown;
+}
