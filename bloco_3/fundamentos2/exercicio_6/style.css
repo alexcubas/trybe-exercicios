@@ -1,0 +1,58 @@
+ol {
+    background-color: yellow;
+}
+
+.par {
+    color: green;
+}
+
+.impar {
+    text-transform: uppercase;
+}
+
+h1, h3 {
+    color: red;
+}
+
+h3:nth-of-type(2) {
+    font-style: italic;
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bolder;
+}
+
+.programacao {
+    color: blue;
+}
+
+.rosa {
+    background-color: pink;
+}
+
+.link:hover {
+    text-transform: uppercase
+}
+
+.laranja:hover {
+    color: orange;
+}
+
+.verde:hover {
+    color: green;
+}
+
+.preta:hover {
+    color: black;
+}
+
+.amarelo:hover {
+    color: yellow;
+}
+
