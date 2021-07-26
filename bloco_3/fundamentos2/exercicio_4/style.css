@@ -1,0 +1,21 @@
+h1, p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+li:hover {
+    background-color: purple;
+    color: white;
+}
+
+li:active {
+    font-family: fantasy;
+}
+
+#lista {
+    margin-bottom: 40px;
+}
+
+li {
+    list-style: none;
+}
