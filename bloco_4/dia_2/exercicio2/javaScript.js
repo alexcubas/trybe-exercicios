@@ -1,4 +1,4 @@
-let numbers = [5, 9, 3, 19, 70, 100, 8, 2, 35, 27,];
+// let numbers = [6, 10, 4, 18, 70, 100, 8, 2, 36, 28];
 
 //EXERCICIO 1
 
@@ -45,3 +45,46 @@ let numbers = [5, 9, 3, 19, 70, 100, 8, 2, 35, 27,];
 //     maiorN =+ numbers[index]
 //   }
 // } console.log(maiorN)
+
+//EXERCICIO 6
+
+// numImpar.push(numbers[index]) para mostrar todos os numeros impares
+
+// let numImpar = 0;
+
+// for (let index = 0; index < numbers.length; index += 1) {
+//   if (numbers[index] % 2 != 0) {
+//     numImpar ++
+//   }
+// }  if (numImpar === 0) {
+//   console.log("nenhum valor impar")
+// }
+// console.log(numImpar)
+
+
+//EXERCICIO 7
+
+// let menorN = numbers[0]
+// for (let index = 0; index < numbers.length; index += 1) {
+//   if (numbers[index] < menorN) {
+//     menorN = numbers[index]
+//   }
+// } console.log(menorN)
+
+//EXERCICIO 8
+
+// for (let numeros = 1; numeros <= 25; numeros += 1) {
+//   console.log(numeros)
+// }
+
+//EXERCICIO 9
+
+// let numbers = [];
+// for (let numeros = 1; numeros <= 25; numeros += 1) {
+//   numbers.push(numeros)
+// }
+
+// for (let numerosDivisao = 1; numerosDivisao <= numbers.length; numerosDivisao += 1) {
+//   console.log(numerosDivisao + " / 2 = " + numerosDivisao / 2)
+// }
+ 
