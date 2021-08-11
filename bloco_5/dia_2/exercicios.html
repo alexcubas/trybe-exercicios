@@ -81,7 +81,74 @@
       tagSection.appendChild(tagP)
       tagP.innerHTML = "texto no paragrafo 1"
       
-      
+      //EXERCICIO 05
+
+      let tagSectionL = document.createElement("section")
+      classeMain.appendChild(tagSectionL)
+      tagSectionL.className = "left-content"
+
+      //EXERCICIO 06
+
+      let tagSectionR = document.createElement("section")
+      classeMain.appendChild(tagSectionR)
+      tagSectionR.className = "right-content"
+
+      //EXERCICIO 07
+
+      let imagem = document.createElement("img")
+      imagem.src = "https://picsum.photos/200"
+      tagSectionL.appendChild(imagem)
+
+      //EXERCICIO 08
+
+      /*criar um  UL
+        criar uma lista no UL
+      */
+
+      let listaNaoOrdenada = document.createElement("ul")
+      let lista1a10 = ["um", "dois", "tres", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"]
+
+      for (let index = 0; index < lista1a10; index += 1) {
+        let listona = lista1a10[index];
+
+        let lista = document.createElement("li")
+        lista.innerHTML = listona;
+        listaNaoOrdenada.appendChild(lista)
+      }
+      tagSectionR.appendChild(listaNaoOrdenada)
+
+      //EXERCICIO 09
+
+      let tag1H3 = document.createElement("h3")
+      let tag2H3 = document.createElement("h3")
+      let tag3H3 = document.createElement("h3")
+
+      classeMain.appendChild(tag1H3, tag2H3, tag3H3)
+
+      //EXERCICIO 10
+
+      tagh1.className = "title"
+
+      //EXERCICIO 11
+
+      tag1H3.className = "description"
+      tag2H3.className = "description"
+      tag3H3.className = "description"
+
+      //EXERCICIO 12
+      classeMain.removeChild(tagSectionL)
+
+      //EXERCICIO 13
+
+      tagSectionR.style.marginRight = "auto"
+
+      //EXERCICIO 14
+
+      tagSection.style.backgroundColor = "green"
+
+      //EXERCICIO 15
+
+      listaNaoOrdenada.removeChild(lista.lastElementChild)
     </script>
   </body>
 </html>
