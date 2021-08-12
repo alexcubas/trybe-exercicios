@@ -37,3 +37,16 @@ for (let index = 0; index < dezDaysList.length; index += 1) {
 
 // EXERCICIO 02
 
+let containerBotoes = document.querySelector(".buttons-container")
+
+function botaoHoliday (feriados) {
+  let botao = document.createElement("button")
+  botao.id = "btn-holiday"
+  botao.innerHTML = "feriados"
+  containerBotoes.appendChild(botao)
+}
+
+botaoHoliday()
+
+//EXERCICIO 03
+
