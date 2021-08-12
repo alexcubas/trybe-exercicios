@@ -37,9 +37,8 @@ for (let index = 0; index < dezDaysList.length; index += 1) {
 
 // EXERCICIO 02
 
-let containerBotoes = document.querySelector(".buttons-container")
-
 function botaoHoliday (feriados) {
+  let containerBotoes = document.querySelector(".buttons-container")
   let botao = document.createElement("button")
   botao.id = "btn-holiday"
   botao.innerHTML = "feriados"
@@ -72,9 +71,9 @@ eventoClick()
 
 //EXERCICIO 04
 
-let botaoSextou = document.querySelector(".buttons-container")
 
 function botaoSexta() {
+  let botaoSextou = document.querySelector(".buttons-container")
   let botao = document.createElement("button")
   botao.id = "btn-friday"
   botao.innerHTML = "Sexta-feira"
@@ -84,3 +83,24 @@ function botaoSexta() {
 
 botaoSexta()
 
+//EXERCICIO 05
+
+function botaoSextou () {
+  let botaoID = document.querySelector("#btn-friday")
+  let sexta = document.querySelectorAll(".friday")
+
+  botaoID.addEventListener("click", function botaoSextou() {
+  for (let index = 0; index < sexta.length; index += 1) {
+    let diasSexta = sexta[index]
+    if (diasSexta.style.color === "pink") {
+      diasSexta.style.color = "#666"
+      diasSexta.style.fontFamily = "sans-serif"
+    } else {
+        diasSexta.style.color = "pink"
+        diasSexta.style.fontFamily = "fantasy"
+      }
+    }
+  })
+}
+
+botaoSextou()
