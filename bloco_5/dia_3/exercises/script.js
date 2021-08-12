@@ -72,3 +72,15 @@ eventoClick()
 
 //EXERCICIO 04
 
+let botaoSextou = document.querySelector(".buttons-container")
+
+function botaoSexta() {
+  let botao = document.createElement("button")
+  botao.id = "btn-friday"
+  botao.innerHTML = "Sexta-feira"
+
+  botaoSextou.appendChild(botao)
+}
+
+botaoSexta()
+
