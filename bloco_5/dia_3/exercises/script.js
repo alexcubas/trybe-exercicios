@@ -50,3 +50,25 @@ botaoHoliday()
 
 //EXERCICIO 03
 
+function eventoClick () {
+  let feriadosID = document.querySelector("#btn-holiday")
+  let feriados = document.querySelectorAll(".holiday")
+
+  feriadosID.addEventListener("click", function eventoClick() {
+    for (let index = 0; index < feriados.length; index += 1) {
+      let diasDeFeriado = feriados[index]
+      if (diasDeFeriado.style.backgroundColor === "green") {
+        diasDeFeriado.style.backgroundColor = "rgb(238,238,238)"
+        diasDeFeriado.style.color = "#666"
+      } else {
+      diasDeFeriado.style.backgroundColor = "green"
+      diasDeFeriado.style.color = "rgb(238,238,238)"
+      }
+    }
+  })
+}
+
+eventoClick()
+
+//EXERCICIO 04
+
