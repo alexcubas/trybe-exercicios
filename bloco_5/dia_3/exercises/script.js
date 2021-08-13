@@ -26,9 +26,9 @@ for (let index = 0; index < dezDaysList.length; index += 1) {
   let theListOfDays = document.createElement("li");
   theListOfDays.innerHTML = firstDayAtTheEnd
   if (firstDayAtTheEnd === 24 || firstDayAtTheEnd === 25 || firstDayAtTheEnd === 31) {
-    theListOfDays.className = "day, holiday"
+    theListOfDays.className = "day holiday"
   } else if (firstDayAtTheEnd === 4 || firstDayAtTheEnd === 11 || firstDayAtTheEnd === 18 || firstDayAtTheEnd === 25) {
-    theListOfDays.className = "day, friday"
+    theListOfDays.className = "day friday"
   } else {
    theListOfDays.className = "day"
   }
@@ -104,3 +104,31 @@ function botaoSextou () {
 }
 
 botaoSextou()
+
+//EXERCICIO 06
+
+function inZoomDias () {
+  let diasDoMes = document.querySelectorAll(".day")
+  // let idDiasDoMes = document.querySelector("#days")
+  
+  for (let index = 0; index < diasDoMes.length; index += 1) {
+    diasDoMes[index].addEventListener("mouseover", function (event) {
+    let diaDoMesSelecionado = diasDoMes[index]
+    diaDoMesSelecionado.style.fontSize = "40px"
+    diaDoMesSelecionado = event.target.className;
+  })
+  }
+}
+inZoomDias()
+
+function outZoomDias () {
+  let diasDoMes = document.getElementById("days")
+  diasDoMes.addEventListener("mouseout", function(event) {
+    event.target.style.fontSize = "20px"
+  })
+}
+
+outZoomDias()
+
+//EXERCICIO 07
+
