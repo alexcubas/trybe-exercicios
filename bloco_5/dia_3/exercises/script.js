@@ -154,3 +154,20 @@ function addLegenda (cor) {
 addLegenda()
 
 //EXERCICIO 09
+
+function selecionarBola () {
+  let taskSelecionada = document.querySelector(".task")
+
+  // let taskSelecionada.className = "selected"
+  taskSelecionada.addEventListener("click", function selecionarBola() {
+    if (taskSelecionada.className === "task") {
+  taskSelecionada.className = "task selected"
+    } else {
+      taskSelecionada.className = "task"
+    }
+  })
+}
+
+selecionarBola()
+
+//EXERCICIO 10
