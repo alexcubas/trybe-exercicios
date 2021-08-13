@@ -132,3 +132,25 @@ outZoomDias()
 
 //EXERCICIO 07
 
+function tarefa(tarefas) {
+  let myTasks = document.querySelector(".my-tasks")
+  let tarefaUnica = document.createElement("span")
+  tarefaUnica.innerHTML = tarefas
+  myTasks.appendChild(tarefaUnica)
+
+}
+
+tarefa("estudar")
+//EXERCICIO 08
+
+function addLegenda (cor) {
+  let myTasks = document.querySelector(".my-tasks")
+  let taskSeiLa = document.createElement("div")
+  taskSeiLa.style.backgroundColor = "green"
+  taskSeiLa.className = "task"
+  myTasks.appendChild(taskSeiLa)
+}
+
+addLegenda()
+
+//EXERCICIO 09
