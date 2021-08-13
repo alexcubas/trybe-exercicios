@@ -171,3 +171,21 @@ function selecionarBola () {
 selecionarBola()
 
 //EXERCICIO 10
+
+function mudandoCorDia () {
+  let taskSelecionadaCor = document.querySelector(".task, selected")
+  let diasMes = document.querySelectorAll(".day")
+    for (let index = 0; index < diasMes.length; index += 1) {
+      taskSelecionadaCor.addEventListener("click", function() {
+      let cadaDia = diasMes[index]
+    if (cadaDia.style.color !== "green") {
+      cadaDia.style.color = "green"
+     } else {
+       cadaDia.style.color = "rgb(119,119,119)"
+     }
+     })
+    }
+  
+}
+
+mudandoCorDia ()
