@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="" method="GET">
+  <fieldset>
+    <label for="name-tag">Nome: </label>
+    <input type="text" id="name-tag" maxlength="40" required>
+  <br> <br>
+    <label for="email-tag">E-mail: </label>
+    <input type="text" id="email-tag" maxlength="50" required>
+    <br><br>
+    <label for="cpf-tag">CPF: </label>
+    <input type="text" id="cpf-tag" maxlength="11" required>
+    <br><br>
+    <label for="address-tag">Endereço: </label>
+    <input type="text" id="address-tag" maxlength="200" required>
+    <br><br>
+    <label for="city-tag">Cidade: </label>
+    <input type="text" id="city-tag" maxlength="28" required>
+    <br><br>
+    <label for="state-tag">Estado: </label>
+     <select name="state" id="state-tag" required>
+       <option value=""></option> </select>
+    <br><br>
+    <label for="tipo-tag">Tipo: 
+    <input type="radio" id="tipo-tag1" name="tipe-tag" required> Casa
+    
+  </label>
+  <label for="tipo-tag2">
+    <input type="radio" id="tipo-tag2" name="tipe-tag" required>Apartamento
+  </label>
+  </form>
+  </fieldset>
+<br>
+  <fieldset>
+    <form action="" method="GET">
+      <label for="abstract-curricum">Resumo curriculo: </label>
+      <textarea name="abstract" id="abstract-curricum" cols="30" rows="10" maxlength="1000" required></textarea>
+      <br><br>
+      <label for="cargo-tag">Cargo: </label>
+      <input type="text" id="cargo-tag" name="cargo" required maxlength="40">
+      <br><br>
+      <label for="descrição-cargo">Descrição cargo:</label>
+      <input type="text" id="descrição-cargo" name="descrição-cargo" required maxlength="500">
+      <br><br>
+      <label for="data-inicio">Data de início: </label>
+      <input type="text" id="data-inicio-dia" name="data-inicio" maxlength="2">
+      <label for="data-inicio">/</label>
+      <input type="text" id="data-inicio-mes" name="data-inicio" maxlength="2">
+      <label for="data-inicio">/</label>
+      <input type="text" id="data-inicio-ano" name="data-inicio" maxlength="4">
+      <button>enviar</button>
+    </form>
+  </fieldset>
+  <script src="script.js"></script>
+</body>
+</html>
