@@ -13,8 +13,6 @@ estates.appendChild(textosEstados)
 textosEstados.value = arraySiglaEstado[index]
 }
 
-let dataDia = document.querySelector("#data-inicio-dia")
-parseInt(dataDia)
-if (dataDia < 0 && dataDia > 31) {
-  alert("escolha um dia valido")
-}
+let date = document.getElementById('date-tag').DatePickerX.init({format: "dd/mm/yyyy"});
+
+// window.DatePickerX.setDefaults( Object, options() )
