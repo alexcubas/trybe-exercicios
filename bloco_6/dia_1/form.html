@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Formulário</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
@@ -17,65 +17,66 @@
   <form  action="" method="GET" class="forms">
   <div class="input-group mb-3" >
     <label class="input-group-text" for="name-tag">Nome </label>
-    <input class="form-control" class="form-control" type="text" id="name-tag" maxlength="40" required>
+    <input class="form-control" type="text" id="name-tag" data-validate-field="name">
     </div>
     <div class="input-group mb-3">
     <label class="input-group-text" for="email-tag">E-mail </label>
-    <input class="form-control" type="text" id="email-tag" maxlength="50" required>
+    <input class="form-control" type="email" id="email-tag" data-validate-field="email">
     </div>
     <div class="input-group mb-3">
     <label class="input-group-text" for="cpf-tag">CPF </label>
-    <input class="form-control" type="text" id="cpf-tag" maxlength="11" required>
+    <input class="form-control" type="text" id="cpf-tag" data-validate-field="text">
     </div>
     <div class="input-group mb-3">
     <label class="input-group-text" for="address-tag">Endereço </label>
-    <input class="form-control" type="text" id="address-tag" maxlength="200" required>
+    <input class="form-control" type="text" id="address-tag" data-validate-field="text">
     </div>
     <div class="input-group mb-3">
     <label  class="input-group-text" for="city-tag">Cidade </label>
-    <input class="form-control" type="text" id="city-tag" maxlength="28" required>
+    <input class="form-control" type="text" id="city-tag" data-validate-field="text">
     </div>
     <div class="input-group mb-3">
     <label class="input-group-text" for="state-tag">Estado </label>
-     <select name="state" id="state-tag" required>
+     <select name="state" id="state-tag" data-validate-field="checkbox">
       <option value=""></option> </select>
     </div>
     <div class="form-check form-check-inline">
     <label class="form-check-label"for="tipo-tag1">
-    <input class="form-check-input" type="radio" id="tipo-tag1" name="tipe-tag" required> Casa
+    <input class="form-check-input" type="radio" id="tipo-tag1" name="tipe-tag" data-validate-field="radio"> Casa
   </div>
   <div class="form-check form-check-inline">
     <label class="form-check-label" for="tipo-tag2">
-    <input class="form-check-input" type="radio" id="tipo-tag2" name="tipe-tag" required>Apartamento
+    <input class="form-check-input" type="radio" id="tipo-tag2" name="tipe-tag" data-validate-field="radio">Apartamento
   </div>
     </div>
-  </form>
-    <form action="" method="GET" class="forms">
       <div class="form-check container">
       <div >
       <label class="input-group-text" for="abstract-curricum">Resumo curriculo </label>
-      <textarea class="form-control" name="abstract" id="abstract-curricum" cols="30" rows="10" maxlength="1000" required></textarea>
+      <textarea class="form-control" name="abstract" id="abstract-curricum" cols="30" rows="10" data-validate-field="text"></textarea>
       </div>
       <div class="input-group mb-3">
       <label class="input-group-text" for="cargo-tag">Cargo </label>
-      <input class="form-control" type="text" id="cargo-tag" name="cargo" required maxlength="40">
+      <input class="form-control" type="text" id="cargo-tag" name="cargo" data-validate-field="text">
       </div>
       <div class="input-group mb-3">
       <label class="input-group-text" for="descrição-cargo">Descrição cargo</label>
-      <input class="form-control" type="text" id="descrição-cargo" name="descrição-cargo" required maxlength="500">
+      <input class="form-control" type="text" id="descrição-cargo" name="descrição-cargo" data-validate-field="text">
       </div>
       <div class="input-group mb-3">
       <label class="input-group-text" for="date-tag"> Data</label>
-      <input class="form-control" type="text" id="date-tag" >
+      <input class="form-control" type="text" id="date-tag" data-validate-field="text">
      </div>
      <div class="input-group mb-3">
       <button class="btn btn-success" type="submit">enviar</button>
     </div>
     </div>
+    
     </form>
+    
     </div class="input-group mb-3">
-  <script src="script.js"></script>
+  <script src="script.js" type="module"></script>
   <script src="jquery-3.6.0.min.js"></script>
   <script src="bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>
